@@ -2,6 +2,9 @@
 > A template project with Grunt, Titanium and TiShadow.
 
 
+## Demo
+[http://www.youtube.com/watch?v=c1u92zT-oA4](http://www.youtube.com/watch?v=c1u92zT-oA4)
+
 ## Dependencies
  * **Grunt** (~0.4.1)
    * **CoffeeScript** (coffee -> js scripts)
