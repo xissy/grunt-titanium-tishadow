@@ -11,7 +11,7 @@
    * **Jade** (jade -> xml views)
    * **LTSS** (ltss -> tss styles)
    * **TiShadow** (deploy, test or execute codes lively)
- * **Titanium** (~3.1.2.GA)
+ * **Titanium** (~3.1.3.GA)
    * **Alloy** (MVC framework)
 
 
