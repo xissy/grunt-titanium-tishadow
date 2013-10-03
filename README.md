@@ -21,6 +21,8 @@ This project uses alloy framework with grunt so usually where you have to manage
  * **ti** - titanium app project
   * **app** - alloy dist folder
   * **src** - alloy source folder
+  * **spec** - test spec dist folder
+  * **tests** - test spec source folder
   
 
 ## Usage
@@ -32,6 +34,10 @@ $ grunt build
 #### Run TiShadow and watch
 ```Shell
 $ grunt dev
+```
+#### Test
+```Shell
+$ grunt test
 ```
 #### Distribute
 ```Shell

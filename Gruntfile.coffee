@@ -19,6 +19,14 @@ module.exports = (grunt) ->
           dest: 'ti/app/'
           ext: '.js'
         ]
+      test:
+        files: [
+          expand: true
+          cwd: 'ti/tests/'
+          src: [ '**/*.coffee' ]
+          dest: 'ti/spec/'
+          ext: '.js'
+        ]
 
     jade:
       alloy:
@@ -65,6 +73,16 @@ module.exports = (grunt) ->
         options:
           alloy:
             platform: [ 'ios' ]
+      test:
+        command: 'spec'
+        options:
+          alloy:
+            platform: [ 'ios' ]
+      clear:
+        command: 'clear'
+        options:
+          alloy:
+            platform: [ 'ios' ]
 
     watch:
       alloy:
@@ -81,6 +99,7 @@ module.exports = (grunt) ->
         'ti/Resources/'
         'ti/app/'
         'ti/build/'
+        'ti/spec/'
       ]
 
 
@@ -103,4 +122,12 @@ module.exports = (grunt) ->
     'build:ti'
     'tishadow:run'
     'watch:alloy'
+  ]
+
+  grunt.registerTask 'test', [
+    'tishadow:clear'
+    'clean'
+    'build:ti'
+    'coffee:test'
+    'tishadow:test'
   ]
